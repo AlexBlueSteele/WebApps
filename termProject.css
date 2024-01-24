@@ -107,3 +107,81 @@ body {
     margin: 4px;
     font-size: 14px;
 }
+
+* {
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+.header {
+    display: grid;
+    grid-template-columns: auto 380px 400px;
+    padding: 5px;
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+
+.header .name-version {   
+    display: flex; 
+    flex: 0 1 45%;
+    align-items: center;
+    background-image: linear-gradient(to left, #D1D5DB, #111827);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.header .name-version #version{
+    font-size: 12px;
+}
+.header .student-info { 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    #identifiers span {
+        font-weight: bold;
+    }   
+}
+.header .buttons{ 
+    display: flex;
+    flex: 0 1 45%;
+    justify-content: flex-end;
+    gap: 10px;
+    align-items: center;  
+}
+.header .buttons .tr {
+    background-color: #D1D5DB;
+    border: 2px solid #1F2937;
+    border-radius: 30px;
+    box-shadow: #1F2937 4px 4px 0 0;
+    color: #1F2937;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 18px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+
+}   
+.header .buttons .tr:hover{
+    background-color: #F3F4F6;
+}
+.header .buttons .tr:active {
+    box-shadow: #422800 2px 2px 0 0;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .tr {
+        min-width: 120px;
+        padding: 0 25px;
+    }
+}
+
