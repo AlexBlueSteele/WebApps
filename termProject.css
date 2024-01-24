@@ -1,6 +1,9 @@
 body {
     min-height: 99vh;
     margin: 0.5vh;
+    background-image: url(https://morevananything.com/wp-content/uploads/2022/07/mountains-scaled-1.jpeg);
+    
+    background-size: cover;
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: 10% auto;
@@ -8,11 +11,13 @@ body {
         "head head"
         "left right";
     font-family: Tahoma, "Trebuchet MS", sans-serif;
+   
 }
 
 .top {
     display: flex;
     flex-direction: column;
+    /*border-top: 2px solid black;*/
 }
 
 #left-main {
@@ -40,30 +45,7 @@ body {
 }
 
 .top > div {
-    border: 2px solid black;
-}
-
-.header {
-    display: flex;
-    border: 1px black solid;
-    padding: 5px;
-    grid-area: head;
-}
-
-.header > div {
-
-    border: 1px blue solid;
-}
-.header .name-version{ 
-    flex: 0 1 65%;
-}
-.header .student-info { 
-    flex: 0 1 25%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.header .buttons { 
-    flex: 0 1 20%;
+    /*border: 2px solid black;*/
 }
 
 #home-pages-head {
@@ -76,10 +58,11 @@ body {
     display: block;
     text-align: center;
     text-decoration: none;
-    color: green;
-    font-weight: bold;
+    color: black;
     font-size: 24px;
     margin-top: 5px;
+    font-style: italic;
+    text-shadow: 0 0 2px #c0d0ff;
 }
 
 #grid-container {
@@ -87,12 +70,27 @@ body {
     grid-template-columns: auto auto auto;
     align-content: stretch;
     gap: 10px;
+    padding: 10px;
+    
+    
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba(180, 184, 246, 0.37);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
 }
 
 .sub-box {
-
-    background: lightgreen;
-    border: 3px solid green;
+    
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 180, 184, 246, 0.37);
+    backdrop-filter: blur( 20px );
+    -webkit-backdrop-filter: blur( 20px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
     padding: 0px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -101,6 +99,7 @@ body {
 
 
     text-align: left;
+    position: relative;
 }
 
 .sub-box p {
@@ -108,10 +107,28 @@ body {
     font-size: 14px;
 }
 
-* {
-    font-family: Tahoma, "Trebuchet MS", sans-serif;
+.sub-box p + p:hover {
+    background-color: #606060A0;
+    border-radius: 4px;
 }
+
+.sub-box h5 {
+    margin: 4px;
+}
+
+.sub-box .course-id {
+    text-shadow: 0 0 1px;
+}
+
+.sub-box .hours {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    color: #101010C0;
+}
+
 .header {
+    grid-area: head;
     display: grid;
     grid-template-columns: auto 380px 400px;
     padding: 5px;
@@ -140,7 +157,7 @@ body {
 .header .student-info { 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    #identifiers span {
+    .identifiers span {
         font-weight: bold;
     }   
 }
@@ -154,15 +171,15 @@ body {
 .header .buttons .tr {
     background-color: #D1D5DB;
     border: 2px solid #1F2937;
-    border-radius: 30px;
+    border-radius: 8px;
     box-shadow: #1F2937 4px 4px 0 0;
     color: #1F2937;
     cursor: pointer;
     display: inline-block;
     font-weight: 600;
-    font-size: 18px;
-    padding: 0 18px;
-    line-height: 50px;
+    font-size: 12px;
+    padding: 0 12px;
+    line-height: 30px;
     text-align: center;
     text-decoration: none;
     user-select: none;
@@ -183,5 +200,34 @@ body {
         min-width: 120px;
         padding: 0 25px;
     }
+}
+
+.top #upper-left{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: start;
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 180, 184, 246, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+.top #upper-left .title {
+    height: 30px;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+
+    background: rgba(31, 41, 55, 0.407);
+    box-shadow: 0 8px 32px 0 rgba(213, 218, 255, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
 }
 
