@@ -1,0 +1,109 @@
+body {
+    min-height: 99vh;
+    margin: 0.5vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 10% auto;
+    grid-template-areas: 
+        "head head"
+        "left right";
+    font-family: Tahoma, "Trebuchet MS", sans-serif;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+}
+
+#left-main {
+    grid-area: left;
+}
+
+#right-main {
+    grid-area: right;
+}
+
+.upper {
+    flex: 0 1 70%;
+}
+
+.lower {
+    flex: 0 1 30%;
+}
+
+#lower-left {
+    flex-basis: 25%;
+}
+
+#upper-left {
+    flex-basis: 75%;
+}
+
+.top > div {
+    border: 2px solid black;
+}
+
+.header {
+    display: flex;
+    border: 1px black solid;
+    padding: 5px;
+    grid-area: head;
+}
+
+.header > div {
+
+    border: 1px blue solid;
+}
+.header .name-version{ 
+    flex: 0 1 65%;
+}
+.header .student-info { 
+    flex: 0 1 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.header .buttons { 
+    flex: 0 1 20%;
+}
+
+#home-pages-head {
+    text-align: center;
+    font-size: 30px;
+    margin: 8px;
+}
+
+.home-pages {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 5px;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-content: stretch;
+    gap: 10px;
+}
+
+.sub-box {
+
+    background: lightgreen;
+    border: 3px solid green;
+    padding: 0px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+    text-align: left;
+}
+
+.sub-box p {
+    margin: 4px;
+    font-size: 14px;
+}
