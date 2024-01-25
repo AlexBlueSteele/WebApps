@@ -2,7 +2,7 @@ body {
     min-height: 99vh;
     margin: 0.5vh;
     background-image: url(https://morevananything.com/wp-content/uploads/2022/07/mountains-scaled-1.jpeg);
-    
+
     background-size: cover;
     display: grid;
     grid-template-columns: 20% 80%;
@@ -11,7 +11,7 @@ body {
         "head head"
         "left right";
     font-family: Tahoma, "Trebuchet MS", sans-serif;
-   
+
 }
 
 .top {
@@ -70,28 +70,27 @@ body {
     grid-template-columns: auto auto auto;
     align-content: stretch;
     gap: 10px;
-    padding: 10px;
-    
-    
+
+
     background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba(180, 184, 246, 0.37);
     backdrop-filter: blur( 7px );
     -webkit-backdrop-filter: blur( 7px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
+
 }
 
 .sub-box {
-    
+
     background: rgba( 255, 255, 255, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 180, 184, 246, 0.37);
     backdrop-filter: blur( 20px );
     -webkit-backdrop-filter: blur( 20px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
-    padding: 0px;
+
+    align-content: center;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
@@ -100,6 +99,35 @@ body {
 
     text-align: left;
     position: relative;
+}
+
+.sub-box-header {
+    grid-column: 1/4;
+    height: 30px;
+    
+    margin: 0;
+
+    background: rgba(31, 41, 55, 0.407);
+    box-shadow: 0 8px 32px 0 rgba(213, 218, 255, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+
+}
+.sub-box-header .user-info {
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 5px;
+    
+}
+.sub-box-header #sub-box-header-middle{
+    font-weight: bold;
+    padding-left: 5px;
+}
+.sub-box-header .sub-box-header-right{
+    float: right;
 }
 
 .sub-box p {
@@ -152,7 +180,7 @@ body {
     -webkit-background-clip: text;
 }
 .header .name-version #version{
-    font-size: 12px;
+font-size: 12px;
 }
 .header .student-info { 
     display: grid;
@@ -199,10 +227,10 @@ body {
     .tr {
         min-width: 120px;
         padding: 0 25px;
-    }
+}
 }
 
-.top #upper-left{
+#upper-left{
     display: grid;
     grid-template-columns: 1fr;
     align-content: start;
@@ -215,7 +243,33 @@ body {
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
-.top #upper-left .title {
+#lower-left{
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 180, 184, 246, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+#lower-right{
+
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 180, 184, 246, 0.37);
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+#course-search {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#upper-left .title {
+    font-weight: bold;
     height: 30px;
     font-size: 20px;
     margin: 0;
@@ -228,6 +282,6 @@ body {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
-    
+
 }
 
